@@ -459,3 +459,69 @@ footer {
     margin-top: 1.4rem;
   }
 }
+
+/* Mobile L size 425px section */
+@media screen and (max-width: 425px) {
+  header {
+    margin-top: 0rem;
+  }
+
+  .logo-nav {
+    margin-left: 1rem;
+    width: auto;
+  }
+
+  .space-nav {
+    margin-right: 1rem;
+    width: auto;
+  }
+
+  .user-name {
+    display: none;
+  }
+
+  .grid-container {
+    grid-template-rows: 45rem auto auto auto auto;
+  }
+
+  .main-text {
+    margin-top: 11.4rem;
+  }
+
+  .team-section {
+    grid-template-columns: 0.03fr 1fr 0.03fr;
+    grid-template-rows: 30rem auto 30rem auto 30rem auto;
+    grid-template-areas:
+      ". ponk ."
+      ". introp ."
+      ". kinero ."
+      ". introk ."
+      ". bokehlicia ."
+      ". introb .";
+  }
+
+  .ponk-avatar,
+  .bokehlicia-avatar {
+    background-position: top;
+  }
+
+  .stats {
+    h4 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1.6rem;
+    }
+  }
+
+  .killers {
+    grid-template-columns: 0.03fr 1fr 0.03fr;
+    grid-template-rows: 30rem auto 30rem auto;
+    grid-template-areas:
+      ". sil ."
+      ". silt ."
+      ". fran ."
+      ". frant .";
+    row-gap: 1rem;
+  }
+}
