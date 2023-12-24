@@ -1,0 +1,165 @@
+// website variables
+$base-color: #1e0711;
+$highlight-color: #ff1eb0;
+$font-color: white;
+$margin-value: 4rem;
+
+// placeholder selector
+%flexaie {
+  display: flex;
+  align-items: end;
+}
+
+%flexjcc {
+  display: flex;
+  justify-content: center;
+}
+
+// font and sizing
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Consolas, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: auto;
+}
+
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100vh auto 8rem 100vh $margin-value;
+  grid-template-areas:
+    "main"
+    "teammates"
+    "stats"
+    "killers"
+    "foot";
+}
+
+// header section
+
+header {
+  position: absolute;
+  margin-top: $margin-value;
+  height: $margin-value;
+  width: 100%;
+  display: flex;
+}
+
+// elements from the navbar
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+//  font logo
+
+.logo-nav {
+  font-size: 3rem;
+  line-height: 2.5rem;
+  height: 100%;
+  width: 14rem;
+  margin-left: $margin-value;
+  @extend %flexaie;
+  color: $font-color;
+}
+
+// menu items navbar
+
+.home-link-active {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  color: $font-color;
+}
+
+.menu-nav {
+  @extend %flexaie;
+}
+
+.menu-nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.menu-nav a {
+  margin: 0 1rem 0 1rem;
+  text-decoration: none;
+  color: $font-color;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.menu-nav a:hover {
+  color: $highlight-color;
+}
+
+.space-nav {
+  @extend %flexaie;
+  width: 14rem;
+  margin-right: $margin-value;
+  display: flex;
+  justify-content: end;
+
+  a:hover {
+    color: $highlight-color;
+  }
+}
+
+.user-name {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: $font-color;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.user-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-image: url(/resource/avatar.png);
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  grid-area: main;
+  background-color: antiquewhite;
+  margin-top: 0;
+}
+
+.main-text {
+  margin-top: 10rem;
+}
+
+.teammates {
+  grid-area: teammates;
+  background-color: aquamarine;
+}
+
+.stats {
+  grid-area: stats;
+  background-color: azure;
+}
+
+.killers {
+  grid-area: killers;
+  background-color: beige;
+}
+
+footer {
+  grid-area: foot;
+
+  background-color: bisque;
+}
