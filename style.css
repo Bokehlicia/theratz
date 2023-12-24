@@ -3,6 +3,37 @@
   align-items: end;
 }
 
+.fran-img, .sil-img, .bokehlicia-avatar, .kinero-avatar, .ponk-avatar, main, .user-avatar {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.read_more a, .read-more a, .user-name, .menu-nav a {
+  text-decoration: none;
+}
+
+.killers h2, .team-section h3, .team-title, .main-text h3, .home-link-active {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+.total-top-one h4, .total-kills h4, .total-games h4 {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #ff1eb0;
+  padding: 1rem 0;
+  text-decoration: underline;
+  text-underline-offset: 1.25rem;
+}
+
+.total-top-one p, .total-kills p, .total-games p {
+  font-size: 3rem;
+  text-align: center;
+  background-color: hsla(0, 0%, 0%, 0.6);
+  padding: 1rem 0;
+}
+
 *,
 html,
 body {
@@ -16,13 +47,14 @@ body {
 body {
   width: 100%;
   height: auto;
+  background-color: #1e0711;
 }
 
 .grid-container {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100vh auto 8rem 100vh 4rem;
+  grid-template-rows: 100vh auto auto 100vh 4rem;
   grid-template-areas: "main" "teammates" "stats" "killers" "foot";
 }
 
@@ -50,8 +82,6 @@ nav {
 }
 
 .home-link-active {
-  text-decoration: underline;
-  text-underline-offset: 0.5rem;
   color: white;
 }
 
@@ -63,7 +93,6 @@ nav {
 
 .menu-nav a {
   margin: 0 0.8rem 0 0.8rem;
-  text-decoration: none;
   color: white;
   font-size: 1.2rem;
   font-weight: 500;
@@ -85,7 +114,6 @@ nav {
 
 .user-name {
   margin-right: 1rem;
-  text-decoration: none;
   color: white;
   font-size: 1.2rem;
   font-weight: 500;
@@ -96,15 +124,11 @@ nav {
   height: 2.5rem;
   border-radius: 50%;
   background-image: url(/resource/avatar.png);
-  background-size: cover;
-  background-position: center;
 }
 
 main {
   grid-area: main;
   background-image: url(/resource/main-background.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .main-text {
@@ -119,8 +143,6 @@ main {
 }
 
 .main-text h3 {
-  text-decoration: underline;
-  text-underline-offset: 1rem;
   color: white;
   font-size: 2rem;
 }
@@ -131,17 +153,110 @@ main {
 
 .teammates {
   grid-area: teammates;
-  background-color: aquamarine;
+  color: white;
+}
+
+.team-title {
+  margin: 2rem 0 0 3rem;
+  padding-bottom: 3rem;
+  font-size: 1.7rem;
+}
+
+.team-section {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.1fr 1fr 0.2fr 1fr 0.1fr 1fr 0.2fr 1fr 0.1fr 1fr 0.2fr;
+  grid-template-rows: 28rem;
+  grid-template-areas: ". ponk . introp . kinero . introk . bokehlicia . introb .";
+}
+.ponk-avatar {
+  grid-area: ponk;
+  background-image: url(/resource/ponk.jpg);
+}
+
+.intro-ponk {
+  grid-area: introp;
+}
+
+.kinero-avatar {
+  grid-area: kinero;
+  background-image: url(/resource/kinero.jpg);
+  background-position: top;
+}
+
+.intro-kinero {
+  grid-area: introk;
+}
+
+.bokehlicia-avatar {
+  grid-area: bokehlicia;
+  background-image: url(/resource/bokehlicia.jpg);
+}
+
+.intro-bokehlicia {
+  grid-area: introb;
+}
+
+.read-more-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.read-more a {
+  color: white;
 }
 
 .stats {
+  margin: 4rem 0;
+  color: white;
   grid-area: stats;
-  background-color: azure;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+  grid-template-rows: auto;
+  grid-template-areas: ". tgames . tkills . ttop1 .";
 }
 
+.total-games {
+  grid-area: tgames;
+}
+.total-kills {
+  grid-area: tkills;
+}
+.total-top-one {
+  grid-area: ttop1;
+}
 .killers {
+  color: white;
   grid-area: killers;
-  background-color: beige;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.1fr 1fr 0.2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". sil . silt ." ". frant . fran .";
+}
+.killers h2 {
+  font-size: 1.5rem;
+}
+
+.sil-img {
+  grid-area: sil;
+  background-image: url(/resource/francisco.jpg);
+}
+
+.sil-one {
+  grid-area: silt;
+}
+
+.fran-one {
+  grid-area: frant;
+  text-align: end;
+}
+
+.fran-img {
+  grid-area: fran;
+  background-image: url(/resource/silvina.jpg);
+}
+
+.read_more a {
+  color: white;
 }
 
 footer {

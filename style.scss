@@ -15,6 +15,37 @@ $margin-value: 4rem;
   justify-content: center;
 }
 
+%bgimgcenter {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+%nodecotext {
+  text-decoration: none;
+}
+
+%underdecotext {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+%statsh4 {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #ff1eb0;
+  padding: 1rem 0;
+  text-decoration: underline;
+  text-underline-offset: 1.25rem;
+}
+
+%statsp {
+  font-size: 3rem;
+  text-align: center;
+  background-color: hsla(0, 0%, 0%, 0.6);
+  padding: 1rem 0;
+}
+
 // font and sizing
 *,
 html,
@@ -29,13 +60,14 @@ body {
 body {
   width: 100%;
   height: auto;
+  background-color: $base-color;
 }
 
 .grid-container {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100vh auto 8rem 100vh $margin-value;
+  grid-template-rows: 100vh auto auto 100vh $margin-value;
   grid-template-areas:
     "main"
     "teammates"
@@ -77,8 +109,7 @@ nav {
 // menu items navbar
 
 .home-link-active {
-  text-decoration: underline;
-  text-underline-offset: 0.5rem;
+  @extend %underdecotext;
   color: $font-color;
 }
 
@@ -94,7 +125,7 @@ nav {
 
 .menu-nav a {
   margin: 0 0.8rem 0 0.8rem;
-  text-decoration: none;
+  @extend %nodecotext;
   color: $font-color;
   font-size: 1.2rem;
   font-weight: 500;
@@ -118,7 +149,7 @@ nav {
 
 .user-name {
   margin-right: 1rem;
-  text-decoration: none;
+  @extend %nodecotext;
   color: $font-color;
   font-size: 1.2rem;
   font-weight: 500;
@@ -129,15 +160,13 @@ nav {
   height: 2.5rem;
   border-radius: 50%;
   background-image: url(/resource/avatar.png);
-  background-size: cover;
-  background-position: center;
+  @extend %bgimgcenter;
 }
 
 main {
   grid-area: main;
   background-image: url(/resource/main-background.jpg);
-  background-size: cover;
-  background-position: center;
+  @extend %bgimgcenter;
 }
 
 .main-text {
@@ -152,8 +181,7 @@ main {
 }
 
 .main-text h3 {
-  text-decoration: underline;
-  text-underline-offset: 1rem;
+  @extend %underdecotext;
   color: white;
   font-size: 2rem;
 }
@@ -162,19 +190,160 @@ main {
   margin-top: 0.3rem;
 }
 
+// Team section
+
 .teammates {
   grid-area: teammates;
-  background-color: aquamarine;
+  color: $font-color;
+}
+
+.team-title {
+  margin: 2rem 0 0 3rem;
+  padding-bottom: 3rem;
+  @extend %underdecotext;
+  font-size: 1.7rem;
+}
+
+.team-section {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.1fr 1fr 0.2fr 1fr 0.1fr 1fr 0.2fr 1fr 0.1fr 1fr 0.2fr;
+  grid-template-rows: 28rem;
+  grid-template-areas: ". ponk . introp . kinero . introk . bokehlicia . introb .";
+
+  h3 {
+    @extend %underdecotext;
+  }
+}
+
+.ponk-avatar {
+  grid-area: ponk;
+  background-image: url(/resource/ponk.jpg);
+  @extend %bgimgcenter;
+}
+
+.intro-ponk {
+  grid-area: introp;
+}
+
+.kinero-avatar {
+  grid-area: kinero;
+  background-image: url(/resource/kinero.jpg);
+  @extend %bgimgcenter;
+  background-position: top;
+}
+
+.intro-kinero {
+  grid-area: introk;
+}
+
+.bokehlicia-avatar {
+  grid-area: bokehlicia;
+  background-image: url(/resource/bokehlicia.jpg);
+  @extend %bgimgcenter;
+}
+
+.intro-bokehlicia {
+  grid-area: introb;
+}
+
+.read-more-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.read-more a {
+  @extend %nodecotext;
+  color: $font-color;
 }
 
 .stats {
+  margin: 4rem 0;
+  color: $font-color;
   grid-area: stats;
-  background-color: azure;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+  grid-template-rows: auto;
+  grid-template-areas: ". tgames . tkills . ttop1 .";
+}
+
+.total-games {
+  grid-area: tgames;
+
+  h4 {
+    @extend %statsh4;
+  }
+
+  p {
+    @extend %statsp;
+  }
+}
+
+.total-kills {
+  grid-area: tkills;
+
+  h4 {
+    @extend %statsh4;
+  }
+
+  p {
+    @extend %statsp;
+  }
+}
+
+.total-top-one {
+  grid-area: ttop1;
+
+  h4 {
+    @extend %statsh4;
+  }
+
+  p {
+    @extend %statsp;
+  }
 }
 
 .killers {
+  color: $font-color;
   grid-area: killers;
-  background-color: beige;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.1fr 1fr 0.2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    ". sil . silt ."
+    ". frant . fran .";
+
+  h2 {
+    font-size: 1.5rem;
+    @extend %underdecotext;
+  }
+}
+
+.sil-img {
+  grid-area: sil;
+  background-image: url(/resource/francisco.jpg);
+  @extend %bgimgcenter;
+}
+
+.sil-one {
+  grid-area: silt;
+}
+
+.fran-one {
+  grid-area: frant;
+  text-align: end;
+}
+
+.fran-img {
+  grid-area: fran;
+  background-image: url(/resource/silvina.jpg);
+  @extend %bgimgcenter;
+}
+
+.read_more {
+  a {
+    color: $font-color;
+    @extend %nodecotext;
+  }
 }
 
 footer {
