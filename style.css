@@ -168,6 +168,10 @@ main {
   grid-template-rows: 28rem;
   grid-template-areas: ". ponk . introp . kinero . introk . bokehlicia . introb .";
 }
+.team-section h3 {
+  font-size: 1.1rem;
+}
+
 .ponk-avatar {
   grid-area: ponk;
   background-image: url(/resource/ponk.jpg);
@@ -215,6 +219,10 @@ main {
   grid-template-areas: ". tgames . tkills . ttop1 .";
 }
 
+.counter:not(.is-visible) {
+  visibility: hidden;
+}
+
 .total-games {
   grid-area: tgames;
 }
@@ -228,6 +236,7 @@ main {
   color: white;
   grid-area: killers;
   display: grid;
+  row-gap: 2rem;
   grid-template-columns: 0.2fr 1fr 0.1fr 1fr 0.2fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: ". sil . silt ." ". frant . fran .";
@@ -261,5 +270,4 @@ main {
 
 footer {
   grid-area: foot;
-  background-color: bisque;
 }/*# sourceMappingURL=style.css.map */

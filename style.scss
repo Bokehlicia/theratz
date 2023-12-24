@@ -212,6 +212,7 @@ main {
 
   h3 {
     @extend %underdecotext;
+    font-size: 1.1rem;
   }
 }
 
@@ -266,6 +267,10 @@ main {
   grid-template-areas: ". tgames . tkills . ttop1 .";
 }
 
+.counter:not(.is-visible) {
+  visibility: hidden;
+}
+
 .total-games {
   grid-area: tgames;
 
@@ -306,6 +311,7 @@ main {
   color: $font-color;
   grid-area: killers;
   display: grid;
+  row-gap: 2rem;
   grid-template-columns: 0.2fr 1fr 0.1fr 1fr 0.2fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
@@ -348,6 +354,4 @@ main {
 
 footer {
   grid-area: foot;
-
-  background-color: bisque;
 }
