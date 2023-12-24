@@ -67,7 +67,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100vh auto auto 100vh $margin-value;
+  grid-template-rows: 100vh auto auto 100vh auto;
   grid-template-areas:
     "main"
     "teammates"
@@ -353,5 +353,51 @@ main {
 }
 
 footer {
+  height: 20rem;
   grid-area: foot;
+}
+
+.footer-newsleter {
+  margin-top: 4rem;
+  background-color: hsla(0, 0%, 0%, 0.2);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $font-color;
+  h3 {
+    @extend %underdecotext;
+    font-size: 2rem;
+  }
+
+  form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem 3rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: hsla(0, 0%, 100%, 0.05);
+  }
+
+  button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: $highlight-color;
+    color: $font-color;
+  }
+}
+::placeholder {
+  color: hsla(321, 100%, 56%, 0.2);
 }
