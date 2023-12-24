@@ -40,7 +40,7 @@ $margin-value: 4rem;
 }
 
 %statsp {
-  font-size: 3rem;
+  font-size: 2.4rem;
   text-align: center;
   background-color: hsla(0, 0%, 0%, 0.6);
   padding: 1rem 0;
@@ -420,6 +420,10 @@ footer {
     margin-right: 2rem;
   }
 
+  .main-text {
+    margin-left: 1.8rem;
+  }
+
   .team-section {
     display: grid;
     grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
@@ -433,6 +437,10 @@ footer {
 
 /* tablet size 768px section */
 @media screen and (max-width: 768px) {
+  header {
+    margin-top: 1rem;
+  }
+
   .menu-nav {
     display: none;
   }
@@ -451,7 +459,7 @@ footer {
   }
 
   .grid-container {
-    grid-template-rows: 100vh auto auto auto auto;
+    grid-template-rows: 50rem auto auto auto auto;
   }
 
   .team-section {
@@ -465,6 +473,10 @@ footer {
 
   .stats {
     margin: 1.4rem 0;
+
+    p {
+      font-size: 2rem;
+    }
   }
 
   .killers {
