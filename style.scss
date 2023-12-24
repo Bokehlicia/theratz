@@ -422,3 +422,40 @@ footer {
     row-gap: 2rem;
   }
 }
+
+/* tablet size 768px section */
+@media screen and (max-width: 768px) {
+  .menu-nav {
+    display: none;
+  }
+
+  .main-text {
+    margin: 20rem auto;
+    width: 90%;
+  }
+
+  .grid-container {
+    grid-template-rows: 100vh auto auto auto auto;
+  }
+
+  .team-section {
+    row-gap: 1rem;
+  }
+
+  .team-title {
+    margin: 1rem 1.4rem;
+    padding-bottom: 1rem;
+  }
+
+  .stats {
+    margin: 1.4rem 0;
+  }
+
+  .killers {
+    grid-template-columns: 0.07fr 1fr 0.07fr 1fr 0.07fr;
+  }
+
+  .footer-newsleter {
+    margin-top: 1.4rem;
+  }
+}
