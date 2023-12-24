@@ -325,4 +325,15 @@ footer {
 
 ::placeholder {
   color: hsla(321, 100%, 56%, 0.2);
+}
+
+/* latop size 1024px section */
+@media screen and (max-width: 1024px) {
+  .team-section {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+    grid-template-rows: 25rem auto;
+    grid-template-areas: ". ponk . kinero . bokehlicia ." ". introp . introk . introb .";
+    row-gap: 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
