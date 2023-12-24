@@ -190,6 +190,14 @@ main {
   margin-top: 0.3rem;
 }
 
+.text.typing {
+  border-right: 1px solid;
+}
+
+.multipleStrings {
+  color: $font-color;
+}
+
 // Team section
 
 .teammates {

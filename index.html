@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet" />
     <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <title>The ratz</title>
   </head>
   <body>
@@ -35,14 +36,24 @@
         <div class="main-text">
           <h3>ERROR 404</h3>
           <br />
-          <h4>Bullets delivery failed</h4>
-          <br />
-          <p>
-            Eu occaecat dolor non sint enim voluptate sit dolor. Sint adipisicing exercitation do labore ea in consequat sint do esse culpa aliquip veniam.
-            <br /><br />
-            Laborum excepteur reprehenderit tempor irure veniam labore voluptate aute adipisicing in enim mollit adipisicing. Non adipisicing anim adipisicing
-            occaecat elit sunt. Dolore culpa velit do quis eiusmod excepteur et.Eiusmod culpa pariatur labore nisi excepteur anim. <br /><br />
-          </p>
+          <p id="multipleStrings"></p>
+          <!-- script -->
+          <script src="<https://unpkg.com/typeit@@{TYPEIT_VERSION}/dist/index.umd.js>"></script>
+
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              new TypeIt("#multipleStrings", {
+                strings: [
+                  "This is my string!",
+                  " ",
+                  "Nisi sunt enim Lorem occaecat esse laborum Lorem. Id amet nisi adipisicing proident qui eiusmod exercitation esse qui dolor dolore id nisi.",
+                  " ",
+                  "Dolore ad fugiat sint laboris fugiat ullamco excepteur mollit laborum deserunt tempor ex. Fugiat officia non est sunt consequat qui in dolor. Amet fugiat officia eu fugiat commodo. Sunt labore consequat ex officia exercitation mollit velit nostrud officia. ",
+                ],
+                speed: 1,
+              }).go();
+            });
+          </script>
         </div>
       </main>
       <section class="teammates">
@@ -160,7 +171,7 @@
           </form>
         </div>
       </footer>
-      <!-- script -->
+      <!-- scripts -->
       <script src="/scripts/script.js"></script>
     </div>
   </body>

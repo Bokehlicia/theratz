@@ -151,6 +151,14 @@ main {
   margin-top: 0.3rem;
 }
 
+.text.typing {
+  border-right: 1px solid;
+}
+
+.multipleStrings {
+  color: white;
+}
+
 .teammates {
   grid-area: teammates;
   color: white;
