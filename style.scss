@@ -412,6 +412,14 @@ footer {
 
 /* latop size 1024px section */
 @media screen and (max-width: 1024px) {
+  .logo-nav {
+    margin-left: 2rem;
+  }
+
+  .space-nav {
+    margin-right: 2rem;
+  }
+
   .team-section {
     display: grid;
     grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
@@ -427,6 +435,14 @@ footer {
 @media screen and (max-width: 768px) {
   .menu-nav {
     display: none;
+  }
+
+  .logo-nav {
+    margin-left: 1.5rem;
+  }
+
+  .space-nav {
+    margin-right: 1.5rem;
   }
 
   .main-text {
