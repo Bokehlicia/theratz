@@ -123,12 +123,12 @@ nav {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  background-image: url(/resource/avatar.png);
+  background-image: url(./resource/avatar.png);
 }
 
 main {
   grid-area: main;
-  background-image: url(/resource/main-background.jpg);
+  background-image: url(./resource/main-background.jpg);
 }
 
 .main-text {
@@ -182,7 +182,7 @@ main {
 
 .ponk-avatar {
   grid-area: ponk;
-  background-image: url(/resource/ponk.jpg);
+  background-image: url(./resource/ponk.jpg);
 }
 
 .intro-ponk {
@@ -191,7 +191,7 @@ main {
 
 .kinero-avatar {
   grid-area: kinero;
-  background-image: url(/resource/kinero.jpg);
+  background-image: url(./resource/kinero.jpg);
   background-position: top;
 }
 
@@ -201,7 +201,7 @@ main {
 
 .bokehlicia-avatar {
   grid-area: bokehlicia;
-  background-image: url(/resource/bokehlicia.jpg);
+  background-image: url(./resource/bokehlicia.jpg);
 }
 
 .intro-bokehlicia {
@@ -258,7 +258,7 @@ main {
 
 .sil-img {
   grid-area: sil;
-  background-image: url(/resource/francisco.jpg);
+  background-image: url(./resource/francisco.jpg);
 }
 
 .sil-one {
@@ -272,7 +272,7 @@ main {
 
 .fran-img {
   grid-area: fran;
-  background-image: url(/resource/silvina.jpg);
+  background-image: url(./resource/silvina.jpg);
 }
 
 .read_more a {
