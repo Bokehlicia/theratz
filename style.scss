@@ -80,7 +80,7 @@ body {
 
 header {
   position: absolute;
-  margin-top: $margin-value;
+  margin-top: 2rem;
   height: $margin-value;
   width: 100%;
   display: flex;
@@ -263,6 +263,10 @@ main {
 .read-more a {
   @extend %nodecotext;
   color: $font-color;
+
+  &:hover {
+    color: $highlight-color;
+  }
 }
 
 .stats {
@@ -394,6 +398,10 @@ footer {
     outline: none;
     border: none;
     background-color: hsla(0, 0%, 100%, 0.05);
+
+    &:hover {
+      background-color: 0, 0%, 100%, 0.2;
+    }
   }
 
   button {
@@ -404,10 +412,15 @@ footer {
     border-radius: 10px;
     background-color: $highlight-color;
     color: $font-color;
+
+    &:hover {
+      background-color: hsla(317, 91%, 55%, 0.4);
+      color: $highlight-color;
+    }
   }
 }
 ::placeholder {
-  color: hsla(321, 100%, 56%, 0.2);
+  color: hsla(321, 100%, 56%, 0.4);
 }
 
 /* latop size 1024px section */

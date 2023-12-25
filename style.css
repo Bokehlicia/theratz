@@ -60,7 +60,7 @@ body {
 
 header {
   position: absolute;
-  margin-top: 4rem;
+  margin-top: 2rem;
   height: 4rem;
   width: 100%;
   display: flex;
@@ -216,6 +216,9 @@ main {
 .read-more a {
   color: white;
 }
+.read-more a:hover {
+  color: #ff1eb0;
+}
 
 .stats {
   margin: 4rem 0;
@@ -309,6 +312,9 @@ footer {
   border: none;
   background-color: hsla(0, 0%, 100%, 0.05);
 }
+.footer-newsleter input:hover {
+  background-color: 0, 0%, 100%, 0.2;
+}
 .footer-newsleter button {
   margin-top: 0.5rem;
   padding: 0.5rem 2rem;
@@ -318,13 +324,17 @@ footer {
   background-color: #ff1eb0;
   color: white;
 }
+.footer-newsleter button:hover {
+  background-color: hsla(317, 91%, 55%, 0.4);
+  color: #ff1eb0;
+}
 
 ::-moz-placeholder {
-  color: hsla(321, 100%, 56%, 0.2);
+  color: hsla(321, 100%, 56%, 0.4);
 }
 
 ::placeholder {
-  color: hsla(321, 100%, 56%, 0.2);
+  color: hsla(321, 100%, 56%, 0.4);
 }
 
 /* latop size 1024px section */
