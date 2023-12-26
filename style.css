@@ -220,11 +220,6 @@ main {
   color: #ff1eb0;
 }
 
-#middle-line {
-  text-decoration: underline;
-  text-underline-offset: -0.4rem;
-}
-
 .stats {
   margin: 4rem 0;
   color: white;
