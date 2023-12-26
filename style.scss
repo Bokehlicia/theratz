@@ -439,6 +439,10 @@ footer {
     margin-right: 2rem;
   }
 
+  .grid-container {
+    grid-template-rows: 50rem auto auto auto auto;
+  }
+
   .main-text {
     margin-left: 1.8rem;
   }
@@ -473,7 +477,6 @@ footer {
   }
 
   .main-text {
-    margin: 20rem auto;
     width: 90%;
   }
 
@@ -499,11 +502,8 @@ footer {
   }
 
   .killers {
+    padding-bottom: 1.5rem;
     grid-template-columns: 0.07fr 1fr 0.07fr 1fr 0.07fr;
-  }
-
-  .footer-newsleter {
-    margin-top: 1.4rem;
   }
 }
 
@@ -529,10 +529,6 @@ footer {
 
   .grid-container {
     grid-template-rows: 45rem auto auto auto auto;
-  }
-
-  .main-text {
-    margin-top: 11.4rem;
   }
 
   .team-section {

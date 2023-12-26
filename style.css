@@ -351,6 +351,9 @@ footer {
   .space-nav {
     margin-right: 2rem;
   }
+  .grid-container {
+    grid-template-rows: 50rem auto auto auto auto;
+  }
   .main-text {
     margin-left: 1.8rem;
   }
@@ -377,7 +380,6 @@ footer {
     margin-right: 1.5rem;
   }
   .main-text {
-    margin: 20rem auto;
     width: 90%;
   }
   .grid-container {
@@ -397,10 +399,8 @@ footer {
     font-size: 2rem;
   }
   .killers {
+    padding-bottom: 1.5rem;
     grid-template-columns: 0.07fr 1fr 0.07fr 1fr 0.07fr;
-  }
-  .footer-newsleter {
-    margin-top: 1.4rem;
   }
 }
 /* Mobile L size 425px section */
@@ -421,9 +421,6 @@ footer {
   }
   .grid-container {
     grid-template-rows: 45rem auto auto auto auto;
-  }
-  .main-text {
-    margin-top: 11.4rem;
   }
   .team-section {
     grid-template-columns: 0.03fr 1fr 0.03fr;
