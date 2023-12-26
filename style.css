@@ -250,6 +250,7 @@ main {
   grid-area: ttop1;
 }
 .killers {
+  padding-bottom: 4rem;
   color: white;
   grid-area: killers;
   display: grid;
@@ -291,7 +292,6 @@ footer {
 }
 
 .footer-newsleter {
-  margin-top: 4rem;
   background-color: hsla(0, 0%, 0%, 0.2);
   height: 100%;
   display: flex;

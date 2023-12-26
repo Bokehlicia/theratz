@@ -326,6 +326,7 @@ main {
 }
 
 .killers {
+  padding-bottom: 4rem;
   color: $font-color;
   grid-area: killers;
   display: grid;
@@ -376,7 +377,6 @@ footer {
 }
 
 .footer-newsleter {
-  margin-top: 4rem;
   background-color: hsla(0, 0%, 0%, 0.2);
   height: 100%;
   display: flex;
