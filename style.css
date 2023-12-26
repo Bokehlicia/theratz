@@ -129,6 +129,8 @@ nav {
 main {
   grid-area: main;
   background-image: url(./resource/main-background.jpg);
+  display: flex;
+  align-items: center;
 }
 
 .main-text {
@@ -137,7 +139,6 @@ main {
   width: 35%;
   height: auto;
   display: block;
-  margin-top: 20rem;
   background-color: hsla(0, 0%, 0%, 0.2);
   color: white;
 }
