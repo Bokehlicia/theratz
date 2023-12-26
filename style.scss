@@ -269,6 +269,11 @@ main {
   }
 }
 
+.sil-one a {
+  display: flex;
+  justify-content: end;
+}
+
 .stats {
   margin: 4rem 0;
   color: $font-color;

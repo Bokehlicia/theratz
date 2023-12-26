@@ -220,6 +220,11 @@ main {
   color: #ff1eb0;
 }
 
+.sil-one a {
+  display: flex;
+  justify-content: end;
+}
+
 .stats {
   margin: 4rem 0;
   color: white;
