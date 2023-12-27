@@ -354,8 +354,9 @@ footer {
   .grid-container {
     grid-template-rows: 50rem auto auto auto auto;
   }
-  .main-text {
-    margin-left: 1.8rem;
+  .main {
+    display: flex;
+    justify-content: center;
   }
   .team-section {
     display: grid;
@@ -380,7 +381,9 @@ footer {
     margin-right: 1.5rem;
   }
   .main-text {
-    width: 90%;
+    width: 100%;
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
   }
   .grid-container {
     grid-template-rows: 50rem auto auto auto auto;
@@ -421,6 +424,11 @@ footer {
   }
   .grid-container {
     grid-template-rows: 45rem auto auto auto auto;
+  }
+  .main-text {
+    width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
   .team-section {
     grid-template-columns: 0.03fr 1fr 0.03fr;
