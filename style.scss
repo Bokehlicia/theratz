@@ -173,7 +173,7 @@ nav {
 
 main {
   grid-area: main;
-  background-image: url(./resource/main-background.jpg);
+  background-image: url(./resource/main-background.webp);
   @extend %bgimgcenter;
   display: flex;
   align-items: center;
@@ -235,7 +235,7 @@ main {
 
 .ponk-avatar {
   grid-area: ponk;
-  background-image: url(./resource/ponk.jpg);
+  background-image: url(./resource/ponk.webp);
   @extend %bgimgcenter;
 }
 
@@ -245,7 +245,7 @@ main {
 
 .kinero-avatar {
   grid-area: kinero;
-  background-image: url(./resource/kinero.jpg);
+  background-image: url(./resource/kinero.webp);
   @extend %bgimgcenter;
   background-position: top;
 }
@@ -256,7 +256,7 @@ main {
 
 .bokehlicia-avatar {
   grid-area: bokehlicia;
-  background-image: url(./resource/bokehlicia.jpg);
+  background-image: url(./resource/bokehlicia.webp);
   @extend %bgimgcenter;
 }
 
@@ -353,7 +353,7 @@ main {
 
 .sil-img {
   grid-area: sil;
-  background-image: url(./resource/francisco.jpg);
+  background-image: url(./resource/francisco.webp);
   @extend %bgimgcenter;
 }
 
@@ -368,7 +368,7 @@ main {
 
 .fran-img {
   grid-area: fran;
-  background-image: url(./resource/silvina.jpg);
+  background-image: url(./resource/silvina.webp);
   @extend %bgimgcenter;
 }
 
@@ -600,6 +600,12 @@ footer {
 
   .user-name {
     display: none;
+  }
+
+  .user-avatar {
+    background-image: url(./resource/mobile.avatar.png);
+    width: 6.25rem;
+    height: 6.25rem;
   }
 
   nav > .sidebar {
