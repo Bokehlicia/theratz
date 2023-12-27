@@ -18,6 +18,26 @@
       <header>
         <nav>
           <div class="logo-nav">The Ratz</div>
+          <div onclick="showSidebar()" class="close-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30" fill="white">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+          </div>
+          <div class="sidebar">
+            <div onclick="hideSidebar()" class="open-button">
+              <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30" fill="white">
+                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+              </svg>
+            </div>
+            <ul>
+              <li><div class="user-avatar"></div></li>
+              <li><a href="" class="user-name">ブッケリシア</a></li>
+              <li class="home-link-active"><a href="">Home</a></li>
+              <li class="about-link"><a href="">About</a></li>
+              <li class="team-link"><a href="">Team</a></li>
+              <li class="contact-link"><a href="">Contact</a></li>
+            </ul>
+          </div>
           <div class="menu-nav">
             <ul>
               <li class="home-link-active"><a href="">Home</a></li>
@@ -31,6 +51,16 @@
             <div class="user-avatar"></div>
           </div>
         </nav>
+        <script>
+          function showSidebar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "flex";
+          }
+          function hideSidebar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "none";
+          }
+        </script>
       </header>
       <main>
         <div class="main-text">

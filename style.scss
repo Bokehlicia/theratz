@@ -163,6 +163,14 @@ nav {
   @extend %bgimgcenter;
 }
 
+.sidebar {
+  display: none;
+}
+
+.close-button {
+  display: none;
+}
+
 main {
   grid-area: main;
   background-image: url(./resource/main-background.jpg);
@@ -474,7 +482,71 @@ footer {
   }
 
   .space-nav {
+    display: none;
     margin-right: 1.5rem;
+  }
+
+  li .user-avatar {
+    margin-bottom: -1.5rem;
+  }
+
+  nav > .sidebar {
+    display: none;
+    justify-content: end;
+  }
+
+  .sidebar {
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    z-index: 999;
+    width: 16rem;
+    height: 100vh;
+    background-color: hsla(321, 100%, 56%, 0.2);
+    backdrop-filter: blur(0.8rem);
+    box-shadow: -0.8rem - 0.8rem hsla(0, 0%, 0%, 0.5);
+
+    ul {
+      margin-top: 2.5rem;
+      margin-right: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      list-style: none;
+
+      .user-name {
+        margin-right: 0;
+      }
+    }
+
+    li {
+      margin-bottom: 2rem;
+    }
+
+    a {
+      color: $font-color;
+      text-decoration: none;
+      text-underline-offset: 0.5;
+
+      &:hover {
+        color: $highlight-color;
+      }
+    }
+  }
+
+  .close-button {
+    position: relative;
+    top: 1.9rem;
+    right: 1.5rem;
+    display: flex;
+  }
+
+  .open-button {
+    position: fixed;
+    top: 1rem;
+    right: 13rem;
   }
 
   .main-text {
@@ -528,6 +600,36 @@ footer {
 
   .user-name {
     display: none;
+  }
+
+  nav > .sidebar {
+    display: none;
+    justify-content: center;
+  }
+
+  .sidebar {
+    width: 100%;
+    ul {
+      margin-top: 1.5rem;
+      margin-right: 0;
+      align-items: center;
+
+      .user-name {
+        display: flex;
+      }
+    }
+  }
+
+  .close-button {
+    position: relative;
+    top: 1.9rem;
+    right: 1rem;
+  }
+
+  .open-button {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
   }
 
   .grid-container {
