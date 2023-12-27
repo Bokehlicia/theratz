@@ -159,7 +159,7 @@ nav {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  background-image: url(./resource/avatar.png);
+  background-image: url(./resource/avatar.gif);
   @extend %bgimgcenter;
 }
 
@@ -491,7 +491,6 @@ footer {
   }
 
   .user-avatar {
-    background-image: url(./resource/mobile.avatar.png);
     width: 6.25rem;
     height: 6.25rem;
   }
