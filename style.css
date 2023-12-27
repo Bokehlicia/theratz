@@ -392,6 +392,11 @@ footer {
   li .user-avatar {
     margin-bottom: -1.5rem;
   }
+  .user-avatar {
+    background-image: url(./resource/mobile.avatar.png);
+    width: 6.25rem;
+    height: 6.25rem;
+  }
   nav > .sidebar {
     display: none;
     justify-content: end;
@@ -408,10 +413,10 @@ footer {
     background-color: hsla(321, 58%, 24%, 0.2);
     -webkit-backdrop-filter: blur(0.8rem);
             backdrop-filter: blur(0.8rem);
-    box-shadow: -1.6rem hsla(0, 0%, 0%, 0.5);
+    box-shadow: hsla(321, 67%, 11%, 0.075) -1px -10px 10px 2px, hsla(321, 67%, 11%, 0.075) -2px -10px 10px 2px, hsla(321, 67%, 11%, 0.075) -4px -10px 10px 2px, hsla(321, 67%, 11%, 0.075) -8px -10px 10px 2px, hsla(321, 67%, 11%, 0.075) -5px -10px 10px 2px;
   }
   .sidebar ul {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     margin-right: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -485,11 +490,6 @@ footer {
   .user-name {
     display: none;
   }
-  .user-avatar {
-    background-image: url(./resource/mobile.avatar.png);
-    width: 6.25rem;
-    height: 6.25rem;
-  }
   nav > .sidebar {
     display: none;
     justify-content: center;
@@ -498,7 +498,7 @@ footer {
     width: 100%;
   }
   .sidebar ul {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     margin-right: 0;
     align-items: center;
   }
